@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Terminal+Dosis" />
+    <link href='https://css.gg/user.css' rel='stylesheet'>
+    <link href='https://css.gg/mail.css' rel='stylesheet'>
+    <link href='https://css.gg/smartphone.css' rel='stylesheet'>
+    <title>Pizzatron</title>
+</head>
+<body>
+    <header id="header">
+        <img src="./assets/logo.png" alt="Store's logo" id="header-img">
+        <input type="checkbox" name="check" id="check">
+        <label for="check" class="check-btn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#form" class="nav-link">Contact-Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h1>Welcome to PizzaTron 3000</h1>
+            <p>Here your pizza is cold and you like it that way!</p>
+        </section>
+        <section id="home" class="card">
+            <h2>Our history</h2>
+            <p>
+                Our establishment was founded on February 26, 2007. Since then, we have been serving the most cold and delicious pizza you will ever find in the North Pole!
+            </p>
+            <p style="margin-top: 10px;">
+                Come by some time, I assure you that there will be no regrets!
+            </p>
+        </section>
+        <section id="about" class="card">
+            <iframe src="https://www.youtube.com/embed/EFe-NQbNMbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+            <h2>This is how we do</h2>
+            <p>Here at PizzaTron 3000 we have the best customer service. <br> Your pizza will be ready in the blink of an eye! <br> So, what are you waiting for? <br> Stop by any time, we will receive you with open wings!</p>
+        </section>
+        <h2 id="products-title">Take a look at our most selled products</h2>
+        <section id="products">
+            <div class="product one" class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQXBYP-WQJCUmet3P0JZbGZeKQMHeu95W0BAMTydqg0-MB8KzKmuIbreryWFlZ1Aue_g&usqp=CAU" alt="Seaweed pizza photo" class="photos seaweed">
+                <h2>Seaweed Pizza</h2>
+                <p>A delicious pizza made of:</p>
+                <ul>
+                    <li>Pizza sauce</li>
+                    <li>Cheese</li>
+                    <li>Seaweed</li>
+                </ul>
+                <button>Buy</button>
+            </div>
+            <div class="product two" class="card">
+                <img src="https://media.istockphoto.com/photos/cheese-pizza-slice-on-white-plate-picture-id1064769544" alt="Cheese pizza photo" class="photos cheese">
+                <h2>Cheese Pizza</h2>
+                <p>A delicious pizza made of:</p>
+                <ul>
+                    <li>Pizza sauce</li>
+                    <li>Cheese</li>
+                </ul>
+                <button>Buy</button>
+            </div>
+            <div class="product thre" class="card">
+                <img src="https://thumbs.dreamstime.com/b/slice-shrimp-pizza-20811743.jpg" alt="Shrimp pizza photo" class="photos shrimps">
+                <h2>Shrimp Pizza</h2>
+                <p>A delicious pizza made of:</p>
+                <ul>
+                    <li>Pizza sauce</li>
+                    <li>Cheese</li>
+                    <li>Shrimps</li>
+                </ul>
+                <button>Buy</button>
+            </div>
+            <div class="product four" class="card">
+                <img src="https://cdn11.bigcommerce.com/s-ltqw2y83vs/images/stencil/1280x1280/products/346/699/pizza__71868.1566933854.jpg?c=2" alt="Chocolate pizza photo" class="photos chocolate">
+                <h2>Chocolate Pizza</h2>
+                <p>A delicious pizza made of:</p>
+                <ul>
+                    <li>Chocolate sauce</li>
+                    <li>Sprinkles</li>
+                    <li>Chocolate chips</li>
+                </ul>
+                <button>Buy</button>
+            </div>
+        </section>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h1 id="title">Contact-Us</h1>
+            <p id="description">Use the form below to make your order</p>
+            <div class="form-item" id="text-field">
+                <p id="name-label">Name:</p>
+                <input type="text" name="name" id="name" class="text-field" placeholder="Ex: João Silva Santos" required>
+                <i class="gg-user" id="icon"></i>
+            </div>
+            <div class="form-item" id="text-field">
+                <p id="email-label">E-mail:</p>
+                <input type="email" name="email" id="email" class="text-field" placeholder="Ex: joaoss@gmail.com" required>
+                <i class="gg-mail" id="icon" style="margin-top: -27px;"></i>
+            </div>
+            <div class="form-item" id="text-field">
+                <p id="number-label">Telephone</p>
+                <input type="number" name="telephone" id="number" class="text-field" placeholder="Ex: 31 9 12345678" min="0" max="100000000000" required>
+                <i class="gg-smartphone" id="icon"></i>
+            </div>
+            <div class="form-item" style="display: flex; flex-flow: column wrap;">
+                <p>Wich pizzas do you want?</p>
+                <label>
+                    <input type="checkbox" name="components" id="components-field" value="seaweed-pizza">
+                    Seaweed Pizza
+                </label>
+                <label>
+                    <input type="checkbox" name="components" id="components-field" value="cheese-pizza">
+                    Cheese Pizza
+                </label>
+                <label>
+                    <input type="checkbox" name="components" id="components-field" value="shrimp-pizza">
+                    Shrimp Pizza
+                </label>
+                <label>
+                    <input type="checkbox" name="components" id="components-field" value="chocolate-pizza">
+                    Chocolate Pizza
+                </label>
+            </div>
+            <div class="form-item">
+                <p>Use this field to any additional comments you want:</p>
+                <textarea name="message" id="message-field"></textarea>
+            </div>
+            <div class="form-item" id="submit">
+                <input type="submit" value="Submit" href="https://www.freecodecamp.com/email-submit" id="submit">
+                <!-- <button type="submit" id="submit">Submit!</button> -->
+            </div>
+        </form>
+        <footer>
+            <p>
+                Copyright 2021, Club Penguin.
+            </p>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>

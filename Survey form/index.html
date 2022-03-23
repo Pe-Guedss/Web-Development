@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://css.gg/user.css' rel='stylesheet'>
+    <link href='https://css.gg/mail.css' rel='stylesheet'>
+    <link href='https://css.gg/smartphone.css' rel='stylesheet'>
+    <link href='https://css.gg/website.css' rel='stylesheet'>
+</head>
+<body>
+    <form class="form-area" id="survey-form">
+        <h1 id="title">Contact-Me</h1>
+        <p id="description">Use the form to describe the site you want</p>
+        <div class="form-item" id="text-field">
+            <p id="name-label">Name:</p>
+            <input type="text" name="name" id="name" class="text-field" placeholder="Ex: João Silva Santos" required>
+            <i class="gg-user" id="icon"></i>
+        </div>
+        <div class="form-item" id="text-field">
+            <p id="email-label">E-mail:</p>
+            <input type="email" name="email" id="email" class="text-field" placeholder="Ex: joaoss@gmail.com" required>
+            <i class="gg-mail" id="icon" style="margin-top: -24px;"></i>
+        </div>
+        <div class="form-item" id="text-field">
+            <p id="number-label">Telephone</p>
+            <input type="number" name="telephone" id="number" class="text-field" placeholder="Ex: 31 9 12345678" min="0" max="100000000000" required>
+            <i class="gg-smartphone" id="icon"></i>
+        </div>
+        <div class="form-item">
+            <p>What kind of site do you want?</p>
+            <i class="gg-website" id="icon" style="margin-top: 8px;"></i>
+            <select name="type-of-site" id="dropdown" required>
+                <option disabled selected value>Select a type of site</option>
+                <option value="personal">Personal</option>
+                <option value="business">Business</option>
+                <option value="e-comerce">E-commerce</option>
+                <option value="portfolio">Portfolio</option>
+            </select>
+        </div>
+        <div class="form-item" style="display: flex; flex-flow: column wrap;">
+            <p>How many web-pages do you need?</p>
+            <label>
+                <input type="radio" name="num-pages" id="num-pages-field" value="one" checked>
+                One
+            </label>
+            <label>
+                <input type="radio" name="num-pages" id="num-pages-field" value="two">
+                Two
+            </label>
+            <label>
+                <input type="radio" name="num-pages" id="num-pages-field" value="three">
+                Three
+            </label>
+            <label>
+                <input type="radio" name="num-pages" id="num-pages-field" value="four">
+                Four
+            </label>
+            <label>
+                <input type="radio" name="num-pages" id="num-pages-field" value="five">
+                Five
+            </label>
+        </div>
+        <div class="form-item" style="display: flex; flex-flow: column wrap;">
+            <p>Wich components do you need?</p>
+            <label>
+                <input type="checkbox" name="components" id="components-field" value="navbar">
+                Navigation Bar
+            </label>
+            <label>
+                <input type="checkbox" name="components" id="components-field" value="home-page">
+                Home Page
+            </label>
+            <label>
+                <input type="checkbox" name="components" id="components-field" value="about">
+                About
+            </label>
+            <label>
+                <input type="checkbox" name="components" id="components-field" value="contact-us">
+                Contact-Us
+            </label>
+            <label>
+                <input type="checkbox" name="components" id="components-field" value="localization">
+                Localization
+            </label>
+            <label>
+                <input type="checkbox" name="components" id="components-field" value="products">
+                Products
+            </label>
+            <label>
+                <input type="checkbox" name="components" id="components-field" value="clients">
+                Clients
+            </label>
+        </div>
+        <div class="form-item">
+            <p>Write your message here:</p>
+            <textarea name="message" id="message-field"></textarea>
+        </div>
+        <div class="form-item" id="submit">
+            <button type="submit" id="submit">Submit!</button>
+        </div>
+    </form>
+</body>
+</html>

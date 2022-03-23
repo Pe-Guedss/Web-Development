@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação Técnica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+</head>
+<body>
+    <nav id="navbar">
+        <input type="checkbox" name="check" id="check">
+        <label for="check" class="check-btn">
+            <i class="fa fa-bars" id="bars"></i>
+            <i class="fas fa-times" id="close"></i>
+        </label>
+        <header>Documentação Final Goró Fantasy</header>
+        <ul>
+            <li><a href="#Historia_do_jogo" class="nav-link">História do Jogo</a></li>
+            <li><a href="#Personagens" class="nav-link">Personagens</a></li>
+            <li><a href="#Inimigos" class="nav-link">Inimigos</a></li>
+            <li><a href="#Recursos_do_jogo" class="nav-link">Recursos do Jogo</a></li>
+            <li><a href="#Implementacao" class="nav-link">Implementação</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Historia_do_jogo">
+            <header>História do jogo</header>
+            <p>
+                Pedro e seu amigo Natan passaram a semana inteira estudando como condenados na
+                escola que frequentam. Finalmente, a tão aguardada sexta-feira chega e tudo o que eles
+                querem é ir para uma praça local beber com os amigos. Eles não deixarão ninguém se meter
+                no caminho do tão sonhado último goró da semana.
+            </p>
+        </section>
+
+        <section class="main-section" id="Personagens">
+            <header>Personagens</header>
+            <p>
+                Os inseparáveis vizinhos Pedro e Natan são estudantes normais, e um pouco preguiçosos, que adoram uma resenha pré-fim de semana nos arredores da escola. As habilidades no estilingue da dupla não deixarão que ninguém fique entre eles e a satisfação de uma bebida geladinha.
+            </p>
+            <img src="assets/herois_batalha.png" alt="Arte dos personagens" class="smaller">
+        </section>
+
+        <section class="main-section" id="Inimigos">
+            <header>Inimigos</header>
+            <p>
+                Há quatro tipos de inimigos espalhados de forma aleatória pelo mapa, cada um deles tem um nível de dificuldade diferente, que faz os pontos de vida e ataque variarem.
+            </p>
+            <ul>
+                <li class="container">
+                    <header>Policial</header>
+                    <p>
+                        Incapaz de perceber que adolescentes bebendo em uma praça são um risco muito menor para a sociedade do que ladrões e assassinos, o policial gasta seu (bem remunerado) tempo para perseguir nossa dupla de heróis. Se ele gastasse mais tempo correndo atrás dos verdadeiros perigos para a sociedade, ou se exercitando, talvez ele não seria o inimigo mais fraco do jogo. Mas esse não é o caso…
+                    </p>
+                    <img src="assets/policial.png" alt="Arte do policial" class="smaller">
+                </li>
+                <li class="container">
+                    <header>Professora</header>
+                    <p>
+                        Sua professora chata de geografia. Geralmente ela se limita a trancar você e seu amigo na sala de aula, os impedindo de sair mais cedo. Hoje vocês conseguiram escapar da sombria prisão mas, infelizmente, isso desbloqueou uma fúria inexplicável na professora, que agora corre atrás de vocês arremessando apagadores pelos ares
+                    </p>
+                    <img src="assets/professora.png" alt="Arte da professora" class="smaller">
+                </li>
+                <li class="container">
+                    <header>Aluno Riquinho da Escola ao lado</header>
+                    <p>
+                        O dinheiro do papai pode não comprar a felicidade que ele tão desesperadamente tenta tirar de nossos heróis, mas certamente compra os juízes para que ele saia da cadeia se for pego. Esse pequeno delinquente juvenil arremessa garrafas de bebida alcóolica pegando fogo, também conhecidas como Coquetel Molotov, em nossos heróis.
+                    </p>
+                    <img src="assets/aluno_riquinho_da_escola_ao_lado.png" alt="Arte do aluno riquinho da escola ao lado" class="smaller">
+                </li>
+                <li class="container">
+                    <header>Heróis Corrompidos</header>
+                    <p>
+                        Reza a lenda que essa dupla das trevas passou horas fazendo um trabalho de programação e não conseguiram tirar total. Revoltados com a injustiça que sofreram, eles se voltaram contra a bondade e pureza das sextas-feiras depois da aula e vagam pelas ruas do bairro arremessando pedras amaldiçoadas a todos que os encontrem. <span>(Que medo…)</span>
+                    </p>
+                    <img src="assets/herois_corrompidos.png" alt="Arte dos heróis corrompidos" class="smaller">
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Recursos_do_jogo">
+            <header>Recursos do jogo</header>
+            <ul>
+                <li class="container">
+                    <header>Menu inicial</header>
+                    <p>
+                        Dá ao jogador as opções de iniciar o jogo ou sair do mesmo. Mostra também a maior pontuação adquirida.
+                    </p>
+                    <img src="assets/menu_inicial.png" alt="Imagem do menu inicial" class="bigger">
+                </li>
+                <li class="container">
+                    <header>Mapa do jogo</header>
+                    <p>
+                        A história se passa em uma rua pouco movimentada e com poucos objetos.
+                    </p>
+                    <img src="assets/mapa_de_jogo.png" alt="Imagem do mapa do jogo" class="bigger">
+                </li>
+                <li class="container">
+                    <header>Navegação</header>
+                    <p>
+                        As teclas de navegação são as setas do teclado. Ao apertá-las, você pode se locomover por todos os lugares do mapa desde que não ultrapasse os limites dele.
+                    </p>
+                    <img src="assets/navegacao.png" alt="Imagem do cenário de navegação" class="bigger">
+                </li>
+                <li class="container">
+                    <header>Barra de informações</header>
+                    <p>
+                        Ao pressionar TAB e segurar, o jogador pode ver no canto superior direito de sua tela as informações do personagem (Pontuação até o momento, Pontos de Vida, Pontos de Ataque).
+                    </p>
+                    <img src="assets/barra_de_informacao.png" alt="Imagem mostrando a barra de informações no cenário de navegação" class="bigger">
+                </li>
+                <li class="container">
+                    <header>Encontro com os inimigos e menu de batalha</header>
+                    <p>
+                        Ao estar próximo o suficiente de um inimigo, o gatilho do modo batalha é disparado. As funcionalidades mudam e agora o jogador pode usar as setas para cima e para baixo para selecionar se quer aplicar o ataque padrão, especial ou fugir dos inimigos. É necessário apertar Enter para confirmar a escolha
+                    </p>
+                    <img src="assets/encontro_com_inimigos_e_menu_de_batalhas.png" alt="Imagem do modo de batalha" class="bigger">
+                </li>
+                <li class="container">
+                    <header>Bebida alcoólica de procedência duvidosa</header>
+                    <p>
+                        Sempre que o jogador escolhe jogar, é gerado um novo local para essa maravilha aparecer. Ao coletá-la o jogador recebe instantaneamente 100 pontos adicionais de vida e 5 pontos de ataque.
+                    </p>
+                    <img src="assets/bebida_alcoolica_de_procedencia_duvidosa.png" alt="Arte da bebida alcoólica de procedência duvidosa" class="smaller">
+                </li>
+                <li class="container">
+                    <header>Tela de fim de jogo (Derrota)</header>
+                    <p>
+                        Quando o jogador perde, é exibida uma tela que mostra a pontuação atual e a maior pontuação já obtida no jogo. O jogador pode voltar ao menu principal ou sair do jogo.
+                    </p>
+                    <img src="assets/tela_de_fim_de_jogo_derrota.png" alt="Imagem da tela de fim de jogo (derrota)" class="bigger">
+                </li>
+                <li class="container">
+                    <header>Tela de fim de jogo (Vitória)</header>
+                    <p>
+                        Ao vencer o jogo, o jogador pode ver seu recorde atual e como ele se compara ao maior recorde já obtido por ele. Pode também voltar ao menu principal ou sair do jogo.
+                    </p>
+                    <img src="assets/tela_de_fim_de_jogo_vitoria.png" alt="Imagem da tela de fim de jogo (Vitória)" class="bigger">
+                </li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Implementacao">
+            <header>Implementação</header>
+            <ul>
+                <li class="container">
+                    <header>Funções</header>
+                    <ul>
+                        <li class="container">
+                            <header><code>
+                                void init_Globais (), void init_Corote (Corote *c, ALLEGRO_BITMAP
+                                *pixel_corote), void init_Heroi (Heroi *h, ALLEGRO_BITMAP *sprite_heroi,
+                                ALLEGRO_BITMAP *herois_batalha, ALLEGRO_BITMAP *atk_heroi,
+                                ALLEGRO_BITMAP *atk_heroi_especial), void init_Inimigo (Inimigos *inim,
+                                ALLEGRO_BITMAP *inimigo_batalha, ALLEGRO_BITMAP *pix_ataque, int
+                                tipo)
+                            </code></header>
+                            <p>Essas funções iniciam todas as variáveis e estruturas presentes no jogo.</p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                float randf (), float randFloat (float min, float max), int random (int n), int randomInt (int min, int max)
+                            </code></header>
+                            <p>
+                                Essas funções geram números aleatórios úteis para o funcionamento do jogo.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                float distancia_Euclideana (Ponto a, Ponto b), int (Inimigos inimigo_atual, Inimigos inimigos_anteriores[], int n), int detectou_Inimigo (Heroi h, Inimigos inim []), int chegou_Objetivo (Heroi h)
+                            </code></header>
+                            <p> Essas funções facilitam a verificação de colisão, sobreposição de objetos jogo e a chegada ou não em um determinado ponto.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                void desenha_Cenario_Naveg (Inimigos inimigo [], ALLEGRO_BITMAP *navigation_bck, Ponto camera_pos), void desenha_Pontos_Naveg (Heroi h, ALLEGRO_BITMAP *info_bar), void desenha_Heroi_Naveg (Heroi h), desenha_Corote (Corote c, int tempo), void desenha_Placar_Vitoria (int pontos, *tela_vitoria) void desenha_Cenario_Batalha (Heroi heroi_1, ALLEGRO_BITMAP *opts_atk, ALLEGRO_BITMAP *indicador, ALLEGRO_BITMAP *bck), void desenha_Heroi_Batalha (Heroi *heroi_1), void desenha_Inimigo_Batalha (Inimigos *inimigo), void desenha_Ataque_Heroi (int tipo), void desenha_Ataque_Inimigo (), void desenha_Placar_Derrota (int pontos, ALLEGRO_BITMAP *tela_derrota), void desenha_Menu (int posicao, ALLEGRO_BITMAP *menu_inicial, ALLEGRO_BITMAP *jogar, ALLEGRO_BITMAP *sair, ALLEGRO_BITMAP *indicador, int ciclos)
+                            </code></header>
+                            <p>
+                                Fazem a representação gráfica dos elementos do jogo. Desde telas de menu até eventos do próprio jogo, como a navegação e o modo de batalha.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                void processa_Tecla_Naveg (Heroi *h, int tecla, ALLEGRO_SAMPLE_INSTANCE *som_tab), void processa_Tecla_Batalha (Heroi *h, int tecla, ALLEGRO_SAMPLE_INSTANCE *som_selecionar), int processa_Acao_Heroi (Heroi *h, Inimigos *i), void processa_Tecla_Menu (Heroi *h, int tecla, int *ciclos), int processa_Acao_Menu (Heroi *h), int processa_Tecla_Placares (int tecla, int modo_de_jogo)
+                            </code></header>
+                            <p>
+                                Fazem o processamento das ações do jogador, mudando as características do jogo de acordo com elas.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                void Init_Ataque_Heroi (Heroi *h, int modo), void Init_Ataque_Inimigo (Inimigos *i), void atualiza_Ataque_Heroi (Inimigos *i, int *ciclos, int *controle_tempo), void atualiza_Ataque_Inimigo (int *ciclos, Heroi *h, int *controle_tempo)
+                            </code></header>
+                            <p>
+                                Fazem o processamento dos ataques do modo de batalha
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                void troca_sprite_heroi (Heroi *h, int ciclos)
+                            </code></header>
+                            <p>
+                                Faz a troca dos sprites de movimentação do herói durante o modo de navegação.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="container">
+                    <header>Estruturas</header>
+                    <ul>
+                        <li class="container">
+                            <header><code>
+                                typedef struct Ponto
+                            </code></header>
+                            <p>
+                                Possui duas variáveis de ponto flutuante que permitem maior facilidade de inserção de objetos por coordenadas no mapa.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                typedef struct Heroi
+                            </code></header>
+                            <p>
+                                Cria todas as características necessárias para a manipulação do herói durante o percurso do jogo. Seja no modo de navegação ou de batalha.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                typedef struct Inimigos
+                            </code></header>
+                            <p>
+                                Cria todas as características necessárias para a manipulação do inimigo durante o percurso do jogo. Seja no modo de navegação ou de batalha.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                typedef struct Ataque
+                            </code></header>
+                            <p>
+                                Cria as características e parâmetros dos ataques para serem manipuladas durante o turno de batalha dos personagens.
+                            </p>
+                        </li>
+                        <li class="container">
+                            <header><code>
+                                typedef struct Corote
+                            </code></header>
+                            <p>
+                                Cria todas as características da “bebida alcoólica de procedência duvidosa”, de forma que a manipulação da mesma seja mais fácil durante o modo de navegação.
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Copyright 2021, Pedro Guedes.
+        </p>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

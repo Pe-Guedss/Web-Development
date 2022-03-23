@@ -1,0 +1,116 @@
+:root{
+    --nav_height: 80px;
+    --body-color: #343f3e;
+    --card-bkg-col: #252e2d;
+    --header-color: #049A8F;
+    --text-color: #f1e3f3;
+    --header-border-col: #ABFAA9;
+    --nav-list-color: #084C61;
+    --nav-list-hov-color: #343F3E;
+    --footer-color: #084C61;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+header{
+    width: 100%;
+    /* height: var(--nav_height); */
+    line-height: var(--nav_height);
+    background-color: var(--header-color);
+    position: fixed;
+    z-index: 3;
+}
+nav{
+    float: right;
+}
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    margin-right: 25px;
+    gap: 15px;
+    font-weight: 700;
+}
+nav ul li{
+    font-size: 2em;
+    text-align: center;
+    line-height: var(--nav_height);
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: var(--text-color);
+    border: 2px solid var(--header-border-col);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover{
+    font-size: 0.95em;
+    border: 1px solid var(--header-border-col);
+}
+.check-btn{
+    float: right;
+    display: none;
+    margin-right: 25px;
+    font-size: 4em;
+    cursor: pointer;
+    padding: 3px 3px;
+    line-height: calc(var(--nav_height) - 5px);
+    transition: all 0.3s ease-in-out;
+}
+#check{
+    display: none;
+}
+.first-sec{
+    height: 100vh;
+    background-color: var(--header-border-col);
+}
+#title{
+    float: left;
+    margin-left: 10vw;
+    padding-top: 50vh;
+    font-size: 3em;
+}
+#about{
+    float: right;
+    z-index: 1;
+    margin-right: 50px;
+    width: 50vw;
+    height: 75vh;
+}
+#about img{
+    margin-top: 50%;
+    transform: translateY(-75%);
+    margin-left: 20px;
+    float: left;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+#about p{
+    margin-top: 50%;
+    transform: translateY(-100%);
+    font-size: 2em;
+    text-align: center;
+}
+#portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--text-color);
+}
+#contact{
+    height: 100vh;
+    background-color: var(--nav-list-color);
+}
+footer{
+    height: calc(var(--nav_height) - 20px);
+    background-color: var(--body-color);
+    color: wheat;
+}

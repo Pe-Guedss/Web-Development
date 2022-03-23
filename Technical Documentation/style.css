@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+:root{
+    --nav_width: 250px;
+    --nav-heigth: 80px;
+
+    --body-color: #373F47;
+    --nav-color: #5899E2;
+    --nav-drop-color: #65AFFF;
+    --footer-color: #08A045;
+    --text-color: #ECE2D0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Dosis', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    color: var(--text-color);
+    background-color: var(--body-color);
+}
+nav{
+    float: left;
+    position: fixed;
+    width: var(--nav_width);
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--nav-color);
+    border-right: 2px solid black;
+    z-index: 3;
+}
+nav::-webkit-scrollbar {
+    width: 10px;
+}
+nav::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 20px;
+}
+nav::-webkit-scrollbar-thumb {
+    background: darkgray;
+    border-radius: 10px;
+}
+.check-btn{
+    float: right;
+    display: none;
+    margin-right: 25px;
+    font-size: 4em;
+    cursor: pointer;
+    padding: 3px 3px;
+    line-height: var(--nav_height);
+    transition: all 0.3s ease-in-out;
+}
+#check{
+    display: none;
+}
+nav header{
+    text-align: center;
+    cursor: default;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 20px 20px 10px 20px;
+    border-bottom: 2px solid black;
+    text-shadow: 1px 1px 3px black;
+    transition: all 0.3s ease-in-out;
+}
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    font-size: 2.5em;
+    list-style: none;
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+}
+nav ul li{
+    line-height: 70px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+a.nav-link{
+    display: block;
+    color: var(--text-color);
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+    padding-left: 30px;
+}
+nav ul li:hover{
+    font-size: 1.1em;
+}
+#main-doc{
+    margin-left: calc(var(--nav_width) + 30px);
+    font-size: 2.2em;
+    line-height: 1.5em;
+    margin-right: 30px;
+    z-index: 2;
+}
+#main-doc img{
+    display: block;
+    margin: 30px auto 25px auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#main-doc img.smaller{
+    width: 250px;
+    height: 250px;
+}
+#main-doc img.bigger{
+    width: 700px;
+}
+.main-section{
+    text-align: justify;
+    padding-top: 30px;
+}
+.main-section header{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px black;
+}
+.container{
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.container .container header{
+    font-size: 1em;
+    text-align: left;
+}
+.container .container{
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+}
+.container header, .main-section header{
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+.container p, .main-section p{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.main-section ul{
+    list-style: none;
+}
+footer{
+    width: calc(100vw - var(--nav_width) - 17px);
+    height: var(--nav-heigth);
+    border-top: 1px solid black;
+    margin-left: var(--nav_width);
+    padding: 20px 50px;
+    font-size: 2em;
+    background-color: var(--footer-color);
+    text-shadow: 1px 1px 2px black;
+}
+footer p{
+    float: left;
+}
+footer ul{
+    float: right;
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    margin-right: 15px;
+    gap: 15px;
+}
+footer ul li{
+    text-align: center;
+}
+footer ul li a{
+    color: var(--text-color);
+}
+
+@media (min-width: 1500px){
+    nav{
+        width: calc(var(--nav_width) + 80px);
+    }
+    nav header{
+        font-size: 2.8em;
+    }
+    nav ul{
+        font-size: 2.8em;
+    }
+    #main-doc{
+        margin-left: calc(var(--nav_width) + 80px + 30px);
+        font-size: 2.5em;
+    }
+    #main-doc img.bigger{
+        width: 900px;
+    }
+    #main-doc img.smaller{
+        width: 450px;
+        height: 450px;
+    }
+    footer{
+        font-size: 2.5em;
+        width: calc(100vw - var(--nav-width) + 50px);
+        margin-left: calc(var(--nav_width) + 80px);
+    }
+}
+@media (max-width:1150px){
+    nav{
+        width: calc(var(--nav_width) - 50px);
+    }
+    nav header{
+        font-size: 2.2em;
+    }
+    nav ul{
+        font-size: 2em;
+    }
+    #main-doc{
+        margin-left: calc(var(--nav_width) - 50px + 30px);
+        font-size: 2em;
+    }
+    #main-doc img.bigger{
+        width: 600px;
+    }
+    footer{
+        width: calc(100vw - var(--nav-width) + 50px);
+        margin-left: calc(var(--nav_width) - 50px);
+    }
+}
+@media (max-width:950px){
+    #main-doc img.bigger{
+        width: 450px;
+    }
+}
+@media (max-width:780px){
+    nav{
+        float: none;
+        position: fixed;
+        width: 100%;
+        overflow-y: unset;
+        height: var(--nav-heigth);
+        border-right: none;
+        border-bottom: 2px solid black;
+    }
+    nav header{
+        border-bottom: none;
+        padding-top: 0;
+        margin-left: 0;
+        padding-bottom: 0;
+        display: block;
+        text-align: unset;
+        line-height: var(--nav-heigth);
+    }
+    nav ul{
+        margin-left: -100%;
+        display: block;
+        line-height: var(--nav-heigth);
+        width: 100%;
+        height: 100vh;
+    }
+    nav ul li{
+        border-bottom: none;
+    }
+    .check-btn{
+        margin-top: 10px;
+        display: block;
+        padding: 0;
+    }
+    #close{
+        margin-top: 10px;
+        display: none;
+    }
+    .out{
+        display: none;
+    }
+    #check:checked + .check-btn #bars{
+        display: none;
+    }
+    #check:checked + .check-btn #close{
+        display: block;
+    }
+    #check:checked ~ ul{
+        margin-left: 0;
+        background-color: var(--nav-drop-color);
+        font-weight: bold;
+        line-height: var(--nav-heigth);
+    }
+    #main-doc{
+        padding-top: var(--nav-heigth);
+        margin-left: 15px;
+        margin-right: 10px;
+        font-size: 1.8em;
+    }
+    #main-doc img.bigger{
+        width: 350px;
+    }
+    a.nav-link{
+        padding-left: 0;
+        text-align: center;
+    }
+    footer{
+        width: 100%;
+        height: var(--nav-heigth);
+        margin-left: 0;
+    }
+}
+@media (max-width: 450px){
+    nav header{
+        font-size: 1.9em;
+        margin-left: 0px;
+    }
+    nav ul li{
+        line-height: 50px;
+    }
+    .check-btn{
+        font-size: 3.5em;
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+    #main-doc img.bigger{
+        width: 250px;
+    }
+    #main-doc img.smaller{
+        width: 200px;
+        height: 200px;
+    }
+    footer{
+        height: calc(var(--nav-heigth) + 30px);
+    }
+}
